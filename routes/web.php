@@ -11,45 +11,42 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-// Route::post('/cv-rank', 'FileextractorController@rankCV');
-// Route::post('/quick-rank', 'CVRankingController@rankCV');
-// Route::post('/cv-post', 'FileextractorController@cvUpload');
-// Route::post('/cv-delete', 'FileextractorController@deleteCV');
-
-
-
-// Route::get('/extract-pdf', 'FileextractorController@extractPdf');
-// Route::get('/extract-word', 'FileextractorController@extractWord');
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/', 'DataCenterController@index')->name('home');
+    Route::get('/physical-host', 'PhysicalHostController@index')->name('physical-host');
+    Route::get('/select-server', 'SelectServerController@index')->name('select-server');
+});
+Route::group(['middleware' => 'admin'], function () {
+    Route::get('/datacenter/add', 'DataCenterController@add')->name('datacenter/add');
+    Route::post('/datacenter/add', 'DataCenterController@add')->name('datacenter/add');
+    Route::get('/datacenter/edit', 'DataCenterController@edit')->name('datacenter/edit');
+    Route::post('/datacenter/edit', 'DataCenterController@edit')->name('datacenter/edit');
+    Route::post('/datacenter/delete', 'DataCenterController@delete')->name('datacenter/delete');
+    Route::get('/datacenter/delete', 'DataCenterController@index')->name('datacenter/delete');
 
-Route::get('/ranking', 'CVRankingController@index')->name('ranking');
-Route::post('/ranking', 'CVRankingController@rankCV');
-Route::get('/ranking-detail', 'CVRankingController@PointDetail')->name('ranking-detail');
+    Route::get('/physical-host/add', 'PhysicalHostController@add')->name('physical-host/add');
+    Route::post('/physical-host/add', 'PhysicalHostController@add')->name('physical-host/add');
+    Route::get('/physical-host/edit', 'PhysicalHostController@edit')->name('physical-host/edit');
+    Route::post('/physical-host/edit', 'PhysicalHostController@edit')->name('physical-host/edit');
+    Route::post('/physical-host/delete', 'PhysicalHostController@delete')->name('physical-host/delete');
+    Route::get('/physical-host/delete', 'PhysicalHostController@index')->name('physical-host/delete');
+
+    Route::get('/select-server/add', 'SelectServerController@add')->name('select-server/add');
+    Route::post('/select-server/add', 'SelectServerController@add')->name('select-server/add');
+    Route::get('/select-server/edit', 'SelectServerController@edit')->name('select-server/edit');
+    Route::post('/select-server/edit', 'SelectServerController@edit')->name('select-server/edit');
+    Route::post('/select-server/delete', 'SelectServerController@delete')->name('select-server/delete');
+    Route::get('/select-server/delete', 'SelectServerController@index')->name('select-server/delete');
+});
 
 
-Route::get('/quick-ranking', 'QuickRankingController@index')->name('quick-ranking');
-Route::post('/quick-ranking', 'QuickRankingController@rankCV');
-Route::get('/quick-ranking-detail', 'QuickRankingController@PointDetail')->name('quick-ranking-detail');
 
-Route::get('/cv-list', 'CVCollectionController@index')->name('cv-list');
-Route::post('/cv-delete', 'CVCollectionController@deleteCV');
-Route::post('/cv-clear', 'CVCollectionController@clearCV');
 
-Route::get('/cv-upload', 'CVCollectionController@cvFormRaw')->name('cv-upload');
-Route::post('/cv-upload', 'CVCollectionController@cvUploadRaw');
 
-Route::get('/keyword-parsing', 'KeywordParsingController@index')->name('keyword-parsing');
-Route::post('/keyword-parsing', 'KeywordParsingController@keyParsing');
 
-//Route::get('/cv-upload-zip', 'CVCollectionController@index')->name('cv-upload-zip');
-//Route::post('/cv-upload-zip', 'CVCollectionController@rankCV');
 
 
 

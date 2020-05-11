@@ -13,8 +13,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
-    <div id="app">
+<body style="background-color: #0a0909">
+    <div id="app" >
         <div style="margin-top:50px;">
 
         @yield('content')
