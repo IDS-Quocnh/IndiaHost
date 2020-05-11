@@ -1,0 +1,92 @@
+[10-May-2020 03:42:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:42:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:42:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:43:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:43:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:43:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:43:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:43:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Use of undefine...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:43:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:43:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:45:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:45:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:45:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(868): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(525): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/CliDumper.php(245): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[10-May-2020 03:45:45 UTC] PHP Fatal error:  Class 'PDO' not found in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1236
