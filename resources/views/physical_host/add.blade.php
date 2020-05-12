@@ -115,6 +115,22 @@
                                 </div>
                             </div>
 
+                            <div class="form-group{{ $errors->has('uptime') ? ' has-error' : '' }}">
+                                <label for="hostUsername" class="col-md-4 control-label">User Name</label>
+
+                                <div class="col-md-8">
+                                    <input id="hostUsername" type="text" class="form-control" name="hostUsername" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('hostUrl') ? ' has-error' : '' }}">
+                                <label for="hostUrl" class="col-md-4 control-label">Host URL</label>
+
+                                <div class="col-md-8">
+                                    <input id="hostUrl" type="text" class="form-control" name="hostUrl" required>
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <div class="col-md-8 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
@@ -200,11 +216,14 @@
                                 <div class="col-md-8">
                                     <input id="uptime" type="datetime-local" class="form-control" name="uptime" required>
 
-                                    @if ($errors->has('uptime'))
-                                    <span class="help-block">
-                                <strong>{{ $errors->first('uptime') }}</strong>
-                            </span>
-                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('uptime') ? ' has-error' : '' }}">
+                                <label for="hostPassword" class="col-md-4 control-label">Password</label>
+
+                                <div class="col-md-8">
+                                    <input id="hostPassword" type="text" class="form-control" name="hostPassword" required>
                                 </div>
                             </div>
 

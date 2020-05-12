@@ -36,7 +36,7 @@ class SelectServerController extends Controller
             ->join('datacenter', 'server.datacenter', '=', 'datacenter.id')
             ->join('physical_host', 'server.host_name', '=', 'physical_host.id')
             ->orderBy('server.created_at','desc')
-            ->get(['server.id as id', 'physical_host.host_name as host_name', 'datacenter.name as datacenter', 'server.template as template', 'server.ip_address', 'server.ipmi_address', 'server.status']);
+            ->get(['server.id as id', 'physical_host.host_name as host_name','physical_host.host_username as host_username', 'physical_host.host_password as host_password', 'physical_host.host_url as host_url', 'datacenter.name as datacenter', 'server.template as template', 'server.ip_address', 'server.ipmi_address', 'server.status']);
         return view('select_server.index')->with('serverList', $serverList);
     }
 

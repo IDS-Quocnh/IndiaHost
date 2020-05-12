@@ -50,6 +50,9 @@ class PhysicalHostController extends Controller
             $physicalHost->salt_version = $request->saltVersion;
             $physicalHost->os = $request->os;
             $physicalHost->uptime = $request->uptime;
+            $physicalHost->host_username = $request->hostUsername;
+            $physicalHost->host_password = $request->hostPassword;
+            $physicalHost->host_url = $request->hostUrl;
             $physicalHost->save();
 
             $physicalHostList = PhysicalHost::orderBy('created_at','desc')->get();
@@ -79,6 +82,9 @@ class PhysicalHostController extends Controller
             $physicalHost->salt_version = $request->saltVersion;
             $physicalHost->os = $request->os;
             $physicalHost->uptime = $request->uptime;
+            $physicalHost->host_username = $request->hostUsername;
+            $physicalHost->host_password = $request->hostPassword;
+            $physicalHost->host_url = $request->hostUrl;
             $physicalHost->save();
 
             return view('physical_host.add')->with('susscessMessage','add physical host successfully');

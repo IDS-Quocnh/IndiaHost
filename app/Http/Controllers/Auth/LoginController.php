@@ -3,6 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\User;
+use Illuminate\Http\Request;
+use Authy\AuthyApi;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -40,5 +45,52 @@ class LoginController extends Controller
     public function username()
     {
         return 'username';
+    }
+
+    public function login(Request $request)
+    {
+        $this->validateLogin($request);
+
+        // If the class is using the ThrottlesLogins trait, we can automatically throttle
+        // the login attempts for this application. We'll key this by the username and
+        // the IP address of the client making these requests into this application.
+        if ($this->hasTooManyLoginAttempts($request)) {
+            $this->fireLockoutEvent($request);
+
+            return $this->sendLockoutResponse($request);
+        }
+        $authyApi = New AuthyApi(env('API_KEY',''));
+        $user = User::where('username', '=', $request->username)->firstOrFail();
+        if($request->verify == "verify" && $user->username != "superadmin"){
+            $authyApi->phoneVerificationStart($user->phone, $user->country_code, "sms");
+            return view('auth.verify')->with('username', $request->username)->with('password', $request->password)->with('number_phone', $user->country_code . $user->phone);
+        }else{
+            if($user->username != "superadmin") {
+                try {
+                    $result = $authyApi->phoneVerificationCheck($user->phone, $user->country_code, $request->code);
+                    if ($result->ok()) {
+                        if ($this->attemptLogin($request)) {
+                            return $this->sendLoginResponse($request);
+                        }
+                        $this->incrementLoginAttempts($request);
+                        return $this->sendFailedLoginResponse($request);
+                    } else {
+                        return view('auth.login')->with('errorMessage', 'Wrong token code');
+                    }
+                } catch (Exception $e) {
+                    $response = [];
+                    $response['exception'] = get_class($e);
+                    $response['message'] = $e->getMessage();
+                    $response['trace'] = $e->getTrace();
+                    return $this->sendFailedLoginResponse($request);
+                }
+            }else{
+                if ($this->attemptLogin($request)) {
+                    return $this->sendLoginResponse($request);
+                }
+                $this->incrementLoginAttempts($request);
+                return $this->sendFailedLoginResponse($request);
+            }
+        }
     }
 }

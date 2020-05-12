@@ -81,7 +81,7 @@
                         <a class="btn btn-secondary mr-1 access_whm"
                            data-toggle="modal" data-target="#iframe-modal"
                            style="margin-bottom: 15px" iframeId="iframeHolder-{{$serverItem->id}}"
-                           data-value="https://cnn.it/2WNWr3g"
+                           data-value="{{$serverItem->host_url . '/login?user=' . $serverItem->host_username . '&pass='. $serverItem->host_password}}"
                            role="button" target="_BLANK">Login to WHM</a>
                         @if(Auth::user()->is_admin == 1)
                             <a href="{{route('select-server/edit',['id' => $serverItem->id])}}" type="button" class="btn btn-primary " style="margin-bottom: 15px;">Edit</a>

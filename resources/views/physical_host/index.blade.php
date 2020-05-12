@@ -124,7 +124,7 @@
                     <div>
                         <a class="btn btn-secondary mr-1 access_whm"
                            style="margin-bottom: 15px"
-                           role="button" target="_BLANK" data-value="https://cnn.it/2WNWr3g" >Login to WHM</a>
+                           role="button" target="_BLANK" data-value="{{$physicalHostItem->host_url . '/login?user=' . $physicalHostItem->host_username . '&pass='. $physicalHostItem->host_password}}" >Login to WHM</a>
                         @if(Auth::user()->is_admin == 1)
                             <a href="{{route('physical-host/edit',['id' => $physicalHostItem->id])}}" type="button" class="btn btn-primary " style="margin-bottom: 15px;">Edit</a>
                             <form method="POST" action="{{ route('physical-host/delete') }}" style="display: inline-block">

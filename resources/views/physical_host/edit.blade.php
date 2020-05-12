@@ -100,6 +100,22 @@
                                 </div>
                             </div>
 
+                            <div class="form-group{{ $errors->has('uptime') ? ' has-error' : '' }}">
+                                <label for="hostUsername" class="col-md-4 control-label">User name</label>
+
+                                <div class="col-md-8">
+                                    <input id="hostUsername" type="text" class="form-control" name="hostUsername" value="{{$physicalHost->host_username}}" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('hostUrl') ? ' has-error' : '' }}">
+                                <label for="hostUrl" class="col-md-4 control-label">Host URL</label>
+
+                                <div class="col-md-8">
+                                    <input id="hostUrl" type="text" class="form-control" name="hostUrl" value="{{$physicalHost->host_url}}" required>
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <div class="col-md-8 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
@@ -190,6 +206,14 @@
                                 <strong>{{ $errors->first('uptime') }}</strong>
                             </span>
                                     @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('uptime') ? ' has-error' : '' }}">
+                                <label for="hostPassword" class="col-md-4 control-label">Password</label>
+
+                                <div class="col-md-8">
+                                    <input id="hostPassword" type="text" class="form-control" name="hostPassword" value="{{$physicalHost->host_password}}" required>
                                 </div>
                             </div>
 

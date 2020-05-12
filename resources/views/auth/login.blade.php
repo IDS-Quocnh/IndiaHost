@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+@if(isset($errorMessage))
+<div class="alert alert-danger" role="alert">
+    {{$errorMessage}}
+</div>
+@endif
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -16,7 +21,7 @@
 
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
-
+                                <input id="verify" type="hidden" name="verify" value="{{'verify'}}" autofocus>
                                 @if ($errors->has('username'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('username') }}</strong>
@@ -54,10 +59,6 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
                             </div>
                         </div>
                     </form>

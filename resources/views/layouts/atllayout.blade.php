@@ -5,15 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <link href="https://omni.myhosting.com/static/img/omni_favicon.png') }}" rel="icon" type="image/png') }}">
-    <link href="{{ asset('assets/blacktheme/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/blacktheme/pace-theme-minimal.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/blacktheme/open-iconic-bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/blacktheme/sticky-footer-navbar.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/blacktheme/feedback-dark.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/blacktheme/ribbon.css') }}" rel="stylesheet">
-    <script src="{{ asset('assets/blacktheme/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/blacktheme/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/blacktheme/pace.min.js') }}"></script>
+    <link href="{{ asset('public/assets/blacktheme/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/assets/blacktheme/pace-theme-minimal.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/assets/blacktheme/open-iconic-bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/assets/blacktheme/sticky-footer-navbar.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/assets/blacktheme/feedback-dark.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/assets/blacktheme/ribbon.css') }}" rel="stylesheet">
+    <script src="{{ asset('public/assets/blacktheme/jquery.min.js') }}"></script>
+    <script src="{{ asset('public/assets/blacktheme/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('public/assets/blacktheme/pace.min.js') }}"></script>
     <title> {{$title}}</title>
 </head>
 <body data-gr-c-s-loaded="true" class="  pace-done pace-done">
