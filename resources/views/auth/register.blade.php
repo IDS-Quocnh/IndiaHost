@@ -1,11 +1,6 @@
-@extends('layouts.atllayout', ['title' => 'Register User', 'menukey' => 'register'])
+@extends('layouts.atllayout', ['title' => 'Register User', 'menukey' => 'userManager'])
 @section('content')
 
-<nav aria-label="breadcrumb" class="pt-2">
-    <ol class="breadcrumb bg-light">
-        Add New User
-    </ol>
-</nav>
 @if(isset($susscessMessage))
 <div class="alert alert-success" role="alert">
     {{$susscessMessage}}

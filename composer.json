@@ -12,6 +12,7 @@
         "maatwebsite/excel": "~2.1.0",
         "smalot/pdfparser": "*",
         "authy/php": "3.0"
+
     },
     "require-dev": {
         "filp/whoops": "~2.0",

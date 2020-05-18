@@ -15,9 +15,13 @@
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', 'DataCenterController@index')->name('home');
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/datacenter', 'DataCenterController@index')->name('datacenter');
+    Route::get('/datacenter/details', 'DataCenterController@details')->name('datacenter/details');
     Route::get('/physical-host', 'PhysicalHostController@index')->name('physical-host');
-    Route::get('/select-server', 'SelectServerController@index')->name('select-server');
+    Route::get('/physical-host/details', 'PhysicalHostController@details')->name('physical-host/details');
+    Route::get('/select-server/details', 'SelectServerController@details')->name('select-server/details');
 });
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/datacenter/add', 'DataCenterController@add')->name('datacenter/add');
@@ -34,14 +38,15 @@ Route::group(['middleware' => 'admin'], function () {
     Route::post('/physical-host/delete', 'PhysicalHostController@delete')->name('physical-host/delete');
     Route::get('/physical-host/delete', 'PhysicalHostController@index')->name('physical-host/delete');
 
-    Route::get('/select-server/add', 'SelectServerController@add')->name('select-server/add');
-    Route::post('/select-server/add', 'SelectServerController@add')->name('select-server/add');
-    Route::get('/select-server/edit', 'SelectServerController@edit')->name('select-server/edit');
-    Route::post('/select-server/edit', 'SelectServerController@edit')->name('select-server/edit');
-    Route::post('/select-server/delete', 'SelectServerController@delete')->name('select-server/delete');
-    Route::get('/select-server/delete', 'SelectServerController@index')->name('select-server/delete');
+    Route::get('/user', 'UserController@index')->name('user');
+    Route::get('/user/edit', 'UserController@edit')->name('user/edit');
+    Route::post('/user/edit', 'UserController@edit')->name('user/edit');
+    Route::post('/user/delete', 'UserController@delete')->name('user/delete');
+    
+    
 });
-
+Route::post('/upload-image/upload', 'UploadImageController@upload')->name('upload-image/upload');
+Route::get('/upload-image', 'UploadImageController@index')->name('upload-image');
 
 
 

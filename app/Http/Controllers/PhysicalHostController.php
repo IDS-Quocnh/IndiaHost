@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Redirect;
-use App\PhysicalHost;
+use App\Model\PhysicalHost;
+use App\Model\DataCenter;
 use DB;
 use Auth;
 use Session;
@@ -30,39 +31,40 @@ class PhysicalHostController extends Controller
      */
     public function index()
     {
-        $physicalHostList = PhysicalHost::orderBy('created_at','desc')->get();
-        return view('physical_host.index')->with('physicalHostList', $physicalHostList);
+        $physicalHostList = PhysicalHost::query()
+                            ->join('datacenter', 'physical_host.datacenter', '=', 'datacenter.id')
+                            ->orderBy('physical_host.created_at','desc')
+                            ->get(['physical_host.id as id', 'physical_host.power_status as power_status', 'physical_host.host_info as host_info', 'physical_host.host_status as host_status', 'physical_host.host_id as host_id', 'physical_host.host_name as host_name', 'physical_host.template as template', 'physical_host.server_health as server_health', 'physical_host.ip_address as ip_address' , 'physical_host.os as os', 'physical_host.host_url as host_url', 'physical_host.host_username as host_username', 'physical_host.host_password as host_password', 'physical_host.uptime as uptime', 'datacenter.name as name']);
+        return view('physical_host.list')->with('physicalHostList', $physicalHostList);
+    }
+
+    public function details(Request $request)
+    {
+        $physicalHostItem = PhysicalHost::find($request->id);
+        return view('physical_host.details')->with('physicalHostItem', $physicalHostItem);
     }
 
     public function edit(Request $request)
     {
         if ($request->isMethod('post')) {
             $physicalHost = PhysicalHost::find($request->id);
-            $physicalHost->power_status = $request->powerStatus;
-            $physicalHost->network_status = $request->networkStatus;
-            $physicalHost->host_info = $request->hostInfo;
-            $physicalHost->host_name = $request->hostName;
-            $physicalHost->host_id = $request->hostId;
-            $physicalHost->host_status = $request->hostStatus;
-            $physicalHost->ip_address = $request->ipAddress;
-            $physicalHost->template = $request->template;
-            $physicalHost->server_health = $request->serverHealth;
-            $physicalHost->salt_version = $request->saltVersion;
-            $physicalHost->os = $request->os;
-            $physicalHost->uptime = $request->uptime;
-            $physicalHost->host_username = $request->hostUsername;
-            $physicalHost->host_password = $request->hostPassword;
-            $physicalHost->host_url = $request->hostUrl;
+            $name = $physicalHost->host_name;
+            $physicalHost->setAttributeMap($request->all());
             $physicalHost->save();
 
-            $physicalHostList = PhysicalHost::orderBy('created_at','desc')->get();
-            return view('physical_host.index')->with('susscessMessage','Physical host name "' . $request->hostName . '" edit successfully')->with('physicalHostList', $physicalHostList);
+            $physicalHostList = PhysicalHost::query()
+                                        ->join('datacenter', 'physical_host.datacenter', '=', 'datacenter.id')
+                                        ->orderBy('physical_host.created_at','desc')
+                                        ->get(['physical_host.id as id', 'physical_host.power_status as power_status', 'physical_host.host_info as host_info', 'physical_host.host_status as host_status', 'physical_host.host_id as host_id', 'physical_host.host_name as host_name', 'physical_host.template as template', 'physical_host.server_health as server_health', 'physical_host.salt_version as salt_version' , 'physical_host.os as os', 'physical_host.host_url as host_url', 'physical_host.host_username as host_username', 'physical_host.host_password as host_password', 'physical_host.uptime as uptime', 'datacenter.name as name']);
+            return view('physical_host.list')->with('susscessMessage','Physical host name "' . $name . '" edit successfully')->with('physicalHostList', $physicalHostList);
         }else{
             if (!isset($request->id)) {
                 return redirect()->route('physical-host');
             }
             $physicalHost = PhysicalHost::find($request->id);
-            return view('physical_host.edit')->with('physicalHost', $physicalHost);
+            $dataCenterList = DataCenter::orderBy('name','asc')->get();
+            return view('physical_host.main')->with('physicalHost', $physicalHost)
+                                             ->with('dataCenterList', $dataCenterList);
         }
     }
 
@@ -70,26 +72,14 @@ class PhysicalHostController extends Controller
     {
         if ($request->isMethod('post')) {
             $physicalHost = new PhysicalHost;
-            $physicalHost->power_status = $request->powerStatus;
-            $physicalHost->network_status = $request->networkStatus;
-            $physicalHost->host_info = $request->hostInfo;
-            $physicalHost->host_name = $request->hostName;
-            $physicalHost->host_id = $request->hostId;
-            $physicalHost->host_status = $request->hostStatus;
-            $physicalHost->ip_address = $request->ipAddress;
-            $physicalHost->template = $request->template;
-            $physicalHost->server_health = $request->serverHealth;
-            $physicalHost->salt_version = $request->saltVersion;
-            $physicalHost->os = $request->os;
-            $physicalHost->uptime = $request->uptime;
-            $physicalHost->host_username = $request->hostUsername;
-            $physicalHost->host_password = $request->hostPassword;
-            $physicalHost->host_url = $request->hostUrl;
+            $physicalHost->setAttributeMap($request->all());
             $physicalHost->save();
-
-            return view('physical_host.add')->with('susscessMessage','add physical host successfully');
+            $dataCenterList = DataCenter::orderBy('name','asc')->get();
+            return view('physical_host.main')->with('susscessMessage','add physical host successfully')
+                                             ->with('dataCenterList', $dataCenterList);
         }else{
-            return view('physical_host.add');
+            $dataCenterList = DataCenter::orderBy('name','asc')->get();
+            return view('physical_host.main')->with('dataCenterList', $dataCenterList);
         }
     }
 
@@ -99,7 +89,7 @@ class PhysicalHostController extends Controller
         $name = $physicalHost->host_name;
         $physicalHost->delete();
         $physicalHostList = PhysicalHost::orderBy('created_at', 'desc')->get();
-        return view('physical_host.index')->with('susscessMessage', 'Physical host name "' . $name . '" deleted successfully')->with('physicalHostList', $physicalHostList);
+        return view('physical_host.list')->with('susscessMessage', 'Physical host name "' . $name . '" deleted successfully')->with('physicalHostList', $physicalHostList);
     }
 }
 

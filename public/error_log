@@ -90,3 +90,243 @@ Stack trace:
 #3 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.php(383): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
 #4 /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Cloner/Data.p in /data/home2/pannguye/public_html/demo/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
 [10-May-2020 03:45:45 UTC] PHP Fatal error:  Class 'PDO' not found in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 1236
+[11-May-2020 10:30:16 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:16 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:16 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:19 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:19 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:19 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:34 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:34 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:34 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:36 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:36 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:36 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:36 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:36 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:36 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:37 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:37 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:37 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:37 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:37 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:37 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:38 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:41 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:41 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:41 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:42 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:42 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:42 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:42 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:42 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:42 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:43 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:43 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:43 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:44 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:44 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:44 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:48 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:48 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:48 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:51 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:51 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:51 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:53 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:53 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:53 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:53 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:54 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:54 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:54 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:30:54 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:54 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:30:54 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[11-May-2020 10:31:05 UTC] PHP Warning:  include(/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php): failed to open stream: No such file or directory in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:31:05 UTC] PHP Warning:  include(): Failed opening '/data/home2/pannguye/public_html/demo/vendor/composer/../vlucas/phpdotenv/src/Dotenv.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /data/home2/pannguye/public_html/demo/vendor/composer/ClassLoader.php on line 444
+[11-May-2020 10:31:05 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /data/home2/pannguye/public_h in /data/home2/pannguye/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752

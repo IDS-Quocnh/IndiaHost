@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use App\Model\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -78,7 +78,7 @@ class RegisterController extends Controller
 
         event(new RegisterController($user = $this->create($request->all())));
 
-        return redirect()->route('home', ['addUser' => 'success']);
+        return redirect()->route('user', ['addUser' => 'success']);
     }
 
 }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use \Exception;
 use App\Http\Controllers\Controller;
 use App\Library\Services\OneTouch;
-use App\User;
+use App\Model\User;
 use Authy\AuthyApi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

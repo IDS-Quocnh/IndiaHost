@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Model\User;
 use Illuminate\Http\Request;
 use Authy\AuthyApi;
 use Illuminate\Support\Facades\Auth;
@@ -59,13 +59,15 @@ class LoginController extends Controller
 
             return $this->sendLockoutResponse($request);
         }
+        $user = User::where('username', '=', $request->username)->first();
+        $isDuoSercurity = env('DUO_SECURITY','');
         $authyApi = New AuthyApi(env('API_KEY',''));
-        $user = User::where('username', '=', $request->username)->firstOrFail();
-        if($request->verify == "verify" && $user->username != "superadmin"){
+
+        if(isset($isDuoSercurity) && $isDuoSercurity == 'true' && null !== env('API_KEY','') && env('API_KEY','') != '' && isset($user) && $request->verify == "verify" && $user->username != "superadmin"){
             $authyApi->phoneVerificationStart($user->phone, $user->country_code, "sms");
             return view('auth.verify')->with('username', $request->username)->with('password', $request->password)->with('number_phone', $user->country_code . $user->phone);
         }else{
-            if($user->username != "superadmin") {
+            if(isset($isDuoSercurity) && $isDuoSercurity == 'true' && isset($user) && $user->username != "superadmin") {
                 try {
                     $result = $authyApi->phoneVerificationCheck($user->phone, $user->country_code, $request->code);
                     if ($result->ok()) {
