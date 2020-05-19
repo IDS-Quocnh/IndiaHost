@@ -34,7 +34,13 @@ class User extends Authenticatable
         $id =auth()->user()->id;
         $option = new \stdClass();
         $option->user_options = UserOption::query()->where("user_id","=",$id)->get();
-        $option->system_options = SystemOption::all();
+        $system_options = SystemOption::all();
+
+        $extract_system_option = array();
+        foreach($system_options as $system_option){
+            $extract_system_option[$system_option->key] = $system_option->value;
+        }
+        $option->system_options = $extract_system_option;
 
         return $option;
     }

@@ -50,7 +50,7 @@
                         <li class="dropdown notification-list topbar-dropdown">
                             <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                 <span class="pro-user-name ml-1">
-                                     {{ Auth::user()->username }} {{Auth::user()->custom->user_options}} <i class="mdi mdi-chevron-down"></i>
+                                     {{ Auth::user()->username }} <i class="mdi mdi-chevron-down"></i>
                                 </span>
                             </a>
                             <div id="userMenuBox" class="dropdown-menu dropdown-menu-right profile-dropdown ">
@@ -314,11 +314,21 @@
                         </h6>
 
                         <div class="p-3">
-
-
-
                             <div class="alert alert-warning" role="alert">
                                 <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
+                            </div>
+
+                            <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Allow user to custom their theme</h6>
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('user_config','yes');">
+                                <input type="radio" class="custom-control-input" name="allow-user" value="yes"
+                                    id="allow-user-yes-check"  />
+                                <label class="custom-control-label" for="allow-user-yes-check">Yes</label>
+                            </div>
+
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('user_config','no');">
+                                <input type="radio" class="custom-control-input"  name="allow-user" value="no"
+                                    id="allow-user-no-check" checked />
+                                <label class="custom-control-label" for="allow-user-no-check">No</label>
                             </div>
 
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Header Color</h6>
@@ -334,44 +344,45 @@
                                     change: function(color) {
                                         color.toHexString(); // #ff0000
                                         $(".bg-primary").attr('style', 'background-color: ' + color.toHexString() +' !important');
+                                        configUpdate("header_color",color.toHexString());
                                     }
                                 });
 
                             </script>
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Color Scheme</h6>
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('scheme_color','light');">
                                 <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
-                                    id="light-mode-check" checked />
+                                    id="light-mode-check"   />
                                 <label class="custom-control-label" for="light-mode-check">Light Mode</label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
-                                    id="dark-mode-check" />
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('scheme_color','dark');">
+                                <input type="radio" class="custom-control-input"  name="color-scheme-mode" value="dark"
+                                    id="dark-mode-check"  />
                                 <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
                             </div>
 
                             <!-- Width -->
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Width</h6>
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="width" value="fluid" id="fluid-check" checked />
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('width','fluid');">
+                                <input type="radio" class="custom-control-input"  name="width" value="fluid" id="fluid-check"  />
                                 <label class="custom-control-label" for="fluid-check">Fluid</label>
                             </div>
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('with','boxed');">
                                 <input type="radio" class="custom-control-input" name="width" value="boxed" id="boxed-check" />
-                                <label class="custom-control-label" for="boxed-check">Boxed</label>
+                                <label class="custom-control-label" for="boxed-check" checked>Boxed</label>
                             </div>
 
                             <!-- Menu positions -->
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Menus (Leftsidebar and Topbar) Positon</h6>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('menus_position','fixed');">
                                 <input type="radio" class="custom-control-input" name="menus-position" value="fixed" id="fixed-check"
                                     checked />
                                 <label class="custom-control-label" for="fixed-check">Fixed</label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('menus_position','scrollable');">
                                 <input type="radio" class="custom-control-input" name="menus-position" value="scrollable"
                                     id="scrollable-check" />
                                 <label class="custom-control-label" for="scrollable-check">Scrollable</label>
@@ -380,22 +391,22 @@
                             <!-- Left Sidebar-->
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Color</h6>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('left_size_bar_color','light');">
                                 <input type="radio" class="custom-control-input" name="leftsidebar-color" value="light" id="light-check" checked />
                                 <label class="custom-control-label" for="light-check">Light</label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('left_size_bar_color','dark');">
                                 <input type="radio" class="custom-control-input" name="leftsidebar-color" value="dark" id="dark-check" />
                                 <label class="custom-control-label" for="dark-check">Dark</label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('left_size_bar_color','brand');">
                                 <input type="radio" class="custom-control-input" name="leftsidebar-color" value="brand" id="brand-check" />
                                 <label class="custom-control-label" for="brand-check">Brand</label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-3">
+                            <div class="custom-control custom-switch mb-3" onclick="configUpdate('left_size_bar_color','gradient');">
                                 <input type="radio" class="custom-control-input" name="leftsidebar-color" value="gradient" id="gradient-check" />
                                 <label class="custom-control-label" for="gradient-check">Gradient</label>
                             </div>
@@ -403,19 +414,19 @@
                             <!-- size -->
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Size</h6>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('left_size_bar_size','default');">
                                 <input type="radio" class="custom-control-input" name="leftsidebar-size" value="default"
                                     id="default-size-check" checked />
                                 <label class="custom-control-label" for="default-size-check">Default</label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('left_size_bar_size','condensed');">
                                 <input type="radio" class="custom-control-input" name="leftsidebar-size" value="condensed"
                                     id="condensed-check" />
                                 <label class="custom-control-label" for="condensed-check">Condensed <small>(Extra Small size)</small></label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('left_size_bar_size','compact');">
                                 <input type="radio" class="custom-control-input" name="leftsidebar-size" value="compact"
                                     id="compact-check" />
                                 <label class="custom-control-label" for="compact-check">Compact <small>(Small size)</small></label>
@@ -424,7 +435,7 @@
                             <!-- User info -->
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Sidebar User Info</h6>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('side_bar_user_info','enable');">
                                 <input type="checkbox" class="custom-control-input" name="leftsidebar-user" value="fixed" id="sidebaruser-check" />
                                 <label class="custom-control-label" for="sidebaruser-check">Enable</label>
                             </div>
@@ -433,13 +444,13 @@
                             <!-- Topbar -->
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Topbar</h6>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('top_bar','dark');">
                                 <input type="radio" class="custom-control-input" name="topbar-color" value="dark" id="darktopbar-check"
                                     checked />
                                 <label class="custom-control-label" for="darktopbar-check">Dark</label>
                             </div>
 
-                            <div class="custom-control custom-switch mb-1">
+                            <div class="custom-control custom-switch mb-1" onclick="configUpdate('top_bar','light');">
                                 <input type="radio" class="custom-control-input" name="topbar-color" value="light" id="lighttopbar-check" />
                                 <label class="custom-control-label" for="lighttopbar-check">Light</label>
                             </div>
@@ -460,7 +471,7 @@
 
         <script src="{{ asset('public/assets/UBold/js/vendor.min.js') }}"></script>
         <!-- App js -->
-        <script src="{{ asset('public/assets/UBold/js/app.min.js') }}"></script>
+        <script src="{{ asset('public/assets/UBold/js/app.js') }}"></script>
 
         <script src="{{ asset('public/assets/js/demo_pages/datatables_extension_buttons_html5.js') }}"></script>
         <script src="{{ asset('public/assets/js/plugins/tables/datatables/datatables.min.js') }}"></script>
@@ -486,5 +497,22 @@
         line-height: 75px !important;
     }
 </style>
+<script>
+    function configUpdate(key, value){
 
+     $.ajax({
+     type: "GET",
+     url: "{{route('saveConfigAPI')}}",
+     data: {"_token":  "{{ csrf_token() }}", key : key, value: value},
+     contentType: "application/json; charset=utf-8",
+     dataType: "json",
+     success: function (result) {
+
+     },
+    });
+ }
+
+
+
+</script>
 </html>

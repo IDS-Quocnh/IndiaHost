@@ -22,6 +22,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/physical-host', 'PhysicalHostController@index')->name('physical-host');
     Route::get('/physical-host/details', 'PhysicalHostController@details')->name('physical-host/details');
     Route::get('/select-server/details', 'SelectServerController@details')->name('select-server/details');
+
+    //web api
+    Route::get('saveConfig', 'UserController@saveConfig')->name('saveConfigAPI');
+
 });
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/datacenter/add', 'DataCenterController@add')->name('datacenter/add');
